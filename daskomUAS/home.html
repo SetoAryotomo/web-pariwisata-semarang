@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wisata Semarang</title>
+  </head>
+  <style>
+  h1{
+text-align:center;
+color:black;
+background-color:#d9d8d7;
+margin:0;
+height:35px;
+padding:10px;
+font-family:cambria;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.ml12 {
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+letter-spacing: 0.1em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+body{
+background-color:#f7f7f7;
+margin:0;}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+.box{
+background-color:#d9d8d7;
+height:110px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.foto{
+text-align:center;
+padding:10px;
+}
+
+h2{padding:8px;
+text-align:center;}
+
+.bottom{
+background-color:black;
+color:white;
+height:45px;
+}
+
+  </style>
+  <body>
+  <ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="artikel.html">Artikel</a></li>
+  <li><a href="buku_tamu.php">Buku Tamu</a></li>
+  <li><a href="contact.php">Contact</a></li>
+  <li><a href="tentangkami.html">Tentang Kami</a></li>
+</ul>
+
+<h1 class="ml12" >Website Pariwisata Kota Semarang</h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<div class="video">
+<video playsinline autoplay muted loop style="margin:auto; width: 70%; display: block;padding:10px;">
+<source src="vidsmg.mp4" type="video/mp4"></video>
+</div>
+
+<div class="box">
+<p style="text-align:center;font-family:Calibri;padding-top:10px;"><b>Kota Semarang</b></p>
+<p style="font-family:Calibri;padding:10px;text-align:center;"><i>kota semarang dikenal sebagai pusat perdagangan dan kota jasa.
+Di sisi sejarah, kota ini terkenal dengan "Pertempuran Lima Hari di Semarang".Beragam julukan juga disematkan kota ini, mulai dari kota Atlas, Kota Lumpia, Venesiannya Pulau Jawa,Pelabuhannya Jawa, hingga Semarang Pesona Asia</i></p>
+</div>
+
+<h2>Gallery</h2>
+<div class="foto">
+<img src="wisata.jpg">
+</div>
+
+<div class="bottom">
+<p style="padding:10px;text-align:center;">© 2022 Website Pariwisata Kota Semarang</p>
+</div>
+
+<script>
+var textWrapper = document.querySelector('.ml12');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml12 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.ml12 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });
+</script>
+  </body>
+  </html>

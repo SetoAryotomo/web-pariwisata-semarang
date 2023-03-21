@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wisata Semarang</title>
+  </head>
+  <style>
+  body{background-color:#f7f7f7;
+margin:0;}
+
+  h1{
+text-align:center;
+color:black;
+background-color:#d9d8d7;
+margin:0;
+height:35px;
+padding:10px;
+font-family:cambria;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+.ml12 {
+  font-weight: 200;
+  font-size: 1.8em;
+  text-transform: uppercase;
+letter-spacing: 0.1em;
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.box{
+margin:auto;
+background-color:#e8e6e1;
+height:250px;
+width:80%;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+.gambar{
+float:left;}
+
+img {
+width:90%;
+height:90%;
+padding:10px;}
+
+.artikel{
+padding:10px;
+}
+
+.box1{
+margin:auto;
+background-color:#e8e6e1;
+height:264px;
+width:80%;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+.gambar1{
+float:left;}
+
+
+.artikel1{
+padding:10px;
+}
+
+.box2{
+margin:auto;
+background-color:#e8e6e1;
+height:264px;
+width:80%;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+.gambar2{
+float:left;}
+
+
+.artikel2{
+padding:10px;
+}
+
+#more {display: none;}
+#more1 {display: none;}
+#more2 {display: none;}
+
+.bottom{
+background-color:black;
+color:white;
+height:45px;
+}
+
+    </style>
+  <body>
+  <ul>
+  <li><a href="home.html">Home</a></li>
+  <li><a href="artikel.html">Artikel</a></li>
+  <li><a href="buku_tamu.php">Buku Tamu</a></li>
+  <li><a href="contact.php">Contact</a></li>
+  <li><a href="tentangkami.html">Tentang Kami</a></li>
+</ul>
+
+<h1 class="ml12" >Artikel Pariwisata Kota Semarang</h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+<br>
+<div class="box">
+	<div class="gambar">
+	<img src="lawangsewu.png">
+	</div>
+	<div class="artikel">
+	<p><h2>Lawang Sewu</h2><span id="dots"></span><span id="more">Lawang Sewu adalah gedung bersejarah milik PT Kereta Api Indonesia (Persero) yang awalnya digunakan sebagai Kantor Pusat perusahaan kereta api swasta Nederlandsch-Indische Spoorweg Maatschappij (NISM). Gedung Lawang Sewu dibangun secara bertahap di atas lahan seluas 18.232 m2. 
+	Bangunan utama dimulai pada 27 Februari 1904 dan selesai pada Juli 1907. 
+	Sedangkan bangunan tambahan dibangun sekitar tahun 1916 dan selesai tahun 1918.
+	</span></p>
+	<button onclick="myFunction()" id="myBtn" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Read more</button>
+	</div>
+</div>
+<br>
+<div class="box1">
+	<div class="gambar1">
+	<img src="sampokong.png">
+	</div>
+	<div class="artikel1">
+	<p><h2>Klenteng Sam Poo Kong</h2><span id="dots1"></span><span id="more1">Kelenteng Sam Poo Kong merupakan bangunan bersejarah yang berfungsi sebagai tempat ibadah sekaligus wisata. Kelenteng ini didirikan untuk menghormati Laksamana Cheng Ho.
+	Kelenteng ini didirikan sebagai penghormatan Laksamana Cheng Ho, yakni seorang penjelajah Tiongkok yang singgah di Semarang dalam perjalanannya menyebarkan perdamaian. Laksamana Cheng Ho merupakan laksamana muslim yang diutus Kerajaan Ming dalam beberapa ekspedisi laut ke Kepulauan Selatan.
+	</span></p>
+	<button onclick="myFunction1()" id="myBtn1" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Read more</button>
+	</div>
+</div>
+<br>
+<div class="box2">
+	<div class="gambar2">
+	<img src="gereja.png">
+	</div>
+	<div class="artikel1">
+	<p><h2>Gereja Blenduk</h2><span id="dots2"></span><span id="more2">Gereja yang dibangun pada 1753 ini merupakan salah satu landmark di Kota Lama. Berbeda dari bangunan lain di Kota Lama yang pada umumnya memagari jalan dan tidak menonjolkan bentuk, gedung yang bergaya Neo-Klasik ini justru tampil kontras. 
+	Lokasi bangunan ini berada di Jalan Letjend Suprapto No 32 Kota Lama Semarang dan bernama Gereja GPIB Immanuel. Gereja ini masih dipergunakan untuk peribadatan setiap hari Minggu.
+	
+	</span></p>
+	<button onclick="myFunction2()" id="myBtn2" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Read more</button>
+	</div>
+</div>
+<br>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function myFunction1() {
+  var dots = document.getElementById("dots1");
+  var moreText = document.getElementById("more1");
+  var btnText = document.getElementById("myBtn1");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function myFunction2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+var textWrapper = document.querySelector('.ml12');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml12 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.ml12 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });
+
+</script>
+	
+<div class="bottom">
+<p style="padding:10px;text-align:center;">© 2022 Website Pariwisata Kota Semarang</p>
+</div>
+
+  </body>
+  </html>
